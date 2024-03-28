@@ -78,8 +78,8 @@ df_total = pd.concat([df_high,df_low], ignore_index= True)
 df_total = df_total.sort_values(by=[df_total.columns[2]], ascending=False, ignore_index= True )
 
 
-df_high.to_excel(f"posts/BOVESPA_High.xlsx", sheet_name="BOVESPA_High")
-df_low.to_excel(f"posts/BOVESPA_Low.xlsx", sheet_name="BOVESPA_Low")
-df_total.to_excel(f"posts/BOVESPA_Total.xlsx", sheet_name="BOVESPA_Total")
+df_high.to_excel(f"/BOVESPA_High.xlsx", sheet_name="BOVESPA_High")
+df_low.to_excel(f"/BOVESPA_Low.xlsx", sheet_name="BOVESPA_Low")
+df_total.to_excel(f"/BOVESPA_Total.xlsx", sheet_name="BOVESPA_Total")
 
 
