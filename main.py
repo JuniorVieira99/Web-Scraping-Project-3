@@ -19,7 +19,7 @@ for i in colls_high:
 
 list_rows_high = []
 list_i = []
-for index,i in enumerate(rows_high):
+for i in rows_high:
     string = i.text  
     list_i.append(string.strip())
     if len(list_i) == 6:
@@ -32,10 +32,9 @@ for i in colls_low:
         string = i.text
         list_colls_low.append(string)
         
-
 list_rows_low = []
 list_i = []
-for index,i in enumerate(rows_low):
+for i in rows_low:
     string = i.text  
     list_i.append(string.strip())
     if len(list_i) == 6:
@@ -44,14 +43,15 @@ for index,i in enumerate(rows_low):
 
 
 url_list_high = []
-for index,i in enumerate(url_high):
+for i in url_high:
     string = i['href']
     url_list_high.append(string)
     
 url_list_low= []
-for index,i in enumerate(url_low):
+for i in url_low:
     string = i['href']
     url_list_low.append(string)
+    
     
 
 df_high = pd.DataFrame(list_rows_high, columns = list_colls_high)    
